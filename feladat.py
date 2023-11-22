@@ -17,10 +17,17 @@ def prim(x:int):
         else:
             print(f"{x} nem prim")
 
+
 def feladatveletlen():
-    list=[]
+    lista=[]
     vszam:int=0
     i:int=0
     while i < 5:
-        szam=math.floor(random.random(36-10)+10)
-        list.append()
+        vszam=math.floor(random.random()*(35-10)+10)
+        lista.append(vszam)
+    return lista
+szia=feladatveletlen()
+def feladatkiir(lista):
+    for i in range(0,len(lista),1):
+        print(f"A lista {i} eleme: {lista[i]}")
+feladatkiir(szia)
